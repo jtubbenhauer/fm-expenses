@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="flex flex-col items-center justify-center h-screen bg-cream">
+      <div class="base:w-[350px] md:w-[420px]">
+        <!-- Balance -->
+        <div
+          class="flex bg-soft-red items-center justify-between p-6 text-pale-orange rounded-lg"
+        >
+          <div class="flex flex-col gap-1.5">
+            <span class="text-sm">My balance</span>
+            <div class="font-bold text-2xl pt-1">$921.48</div>
+          </div>
+          <img src="./images/logo.svg" />
+        </div>
+        <!-- Bottom card -->
+        <div class="flex flex-col rounded-lg p-5 bg-pale-orange mt-4">
+          <h2 class="text-2xl md:text-[1.6rem] font-bold text-dark-brown">
+            Spending - Last 7 days
+          </h2>
+          <!-- Graph -->
+          <div class="flex gap-2 h-48 items-end justify-between mt-7 md:mb-5">
+            <div class="flex flex-col items-center">
+              <div id="mon-label" class="label">28.92</div>
+              <div id="mon-graph" class="column cursor-pointer"></div>
+              <div id="mon-text" class="text-sm mt-3 text-medium-brown"></div>
+            </div>
+            <div class="flex flex-col items-center">
+              <div id="tue-label" class="label">28.92</div>
+              <div id="tue-graph" class="column cursor-pointer"></div>
+              <div id="tue-text" class="text-sm mt-3 text-medium-brown"></div>
+            </div>
+            <div class="flex flex-col items-center">
+              <div id="wed-label" class="label">28.92</div>
+              <div id="wed-graph" class="column-current cursor-pointer"></div>
+              <div id="wed-text" class="text-sm mt-3 text-medium-brown"></div>
+            </div>
+            <div class="flex flex-col items-center">
+              <div id="thu-label" class="label">28.92</div>
+              <div id="thu-graph" class="column cursor-pointer"></div>
+              <div id="thu-text" class="text-sm mt-3 text-medium-brown"></div>
+            </div>
+            <div class="flex flex-col items-center">
+              <div id="fri-label" class="label">28.92</div>
+              <div id="fri-graph" class="column cursor-pointer"></div>
+              <div id="fri-text" class="text-sm mt-3 text-medium-brown"></div>
+            </div>
+            <div class="flex flex-col items-center">
+              <div id="sat-label" class="label">28.92</div>
+              <div id="sat-graph" class="column cursor-pointer"></div>
+              <div id="sat-text" class="text-sm mt-3 text-medium-brown"></div>
+            </div>
+            <div class="flex flex-col items-center">
+              <div id="sun-label" class="label">28.92</div>
+              <div id="sun-graph" class="column cursor-pointer"></div>
+              <div id="sun-text" class="text-sm mt-3 text-medium-brown"></div>
+            </div>
+          </div>
+          <!-- Total this month -->
+          <hr class="mt-5 border-t-cream" />
+          <div class="flex justify-between py-3">
+            <div class="flex flex-col justify-center gap-2 md:gap-1">
+              <span class="text-sm text-medium-brown">Total this month</span>
+              <span class="text-3xl font-bold text-dark-brown">$478.33</span>
+            </div>
+            <div class="flex flex-col items-end self-end">
+              <span class="text-[17px] font-bold text-dark-brown mb-[-7px]"
+                >+2.4%</span
+              >
+              <span class="text-[17px] text-medium-brown">from last month</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- <script type="module" src="main.js"></script> -->
+    <script src="./scripts.js"></script>
+  </body>
+</html>
